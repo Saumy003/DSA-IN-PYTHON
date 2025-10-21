@@ -78,7 +78,7 @@ DSA-in-Python/ │ ├── Data_Structures/ │   ├── arrays.py │   �
 
 1. *Clone the repository*
    ```bash
-   git clone https://github.com/Saumy003/DSA-IN-PYTHON
+   git clone https://github.com/Saumy003/DSA-IN-PYTHON.git
    cd DSA-in-Python
 
 2. Run any example

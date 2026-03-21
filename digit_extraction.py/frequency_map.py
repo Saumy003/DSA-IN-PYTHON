@@ -12,7 +12,8 @@ for i in range(0 , len(nums)):
 
 print(freq_map[7])
 
-# Approach 2 =>
+# Approach 2 =>by .get() method
+
 num = [5, 6, 7, 8,6, 7, 1, 3,3,4,2, 2,7, 3, 1, 5]
 hash_map = {}
 n = len(num)

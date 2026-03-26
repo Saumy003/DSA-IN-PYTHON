@@ -1,38 +1,11 @@
-# Factorial recursion #
+# APPLICATION OF FUNCTIONAL RECURSION #
 
-# Tail Recursion => =>
-# without any parameter
+# Ques1. Find factorial of a given number
 
-count = 0
-def func():
-    global count
-    if count == 4:
-        return
-    count += 1
-    print(count)
-    func()
-
-func()
-
-# with two parameter
-
-def fun(i , n):
-    if i >n :
-        return
-    print(i)
-    fun(i+1,n)
-
-fun(1,4)
-
-# with one parameter
-
-def func(n):
-    if n > 4:
-        return
-    print(n)
-    n += 1
-    func(n)
-
-func(1)
-
-# factorial
+def fact(n):
+    if n == 0 or n== 1:
+        return 1
+    return n * fact(n-1)
+#calling function
+result = fact(6)
+print(result)

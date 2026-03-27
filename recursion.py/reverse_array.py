@@ -26,5 +26,13 @@ reversed_arr2=arr2[::-1]
 print("Reversed array:" , reversed_arr2)
 
 # Approach 3 => using while loop
-arr3 = [6, 7, 8, 9, 1, 2]
+arr = [1, 2, 3, 4, 5]
+start = 0
+end = len(arr) - 1
 
+while start < end:
+    arr[start], arr[end] = arr[end] , arr[start]
+    start += 1
+    end -=1
+
+print("Reversed Array:",arr)

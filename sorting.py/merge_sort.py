@@ -38,5 +38,6 @@ def merge_array(left, right):
             j += 1
     return result
 
+# Function call
 print("Sorted Array is:",merge_sort(nums))   #result = [1, 1, 2, 2, 3, 4, 4, 5, 6]
         

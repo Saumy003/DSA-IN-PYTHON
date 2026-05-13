@@ -1,5 +1,5 @@
 """
-Lower Bound Implementetion
+Lower Bound Implementation
 """
 
 arr = [2, 3, 7, 10, 11, 11, 25]

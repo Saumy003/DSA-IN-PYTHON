@@ -40,7 +40,7 @@ while low <= high:
         low = mid +1
 print("First occurance index is:", lower_bound)
 
-#last Occurance corresponds to upper bound
+#last Occurance corresponds to upper bound -1
 upper_bound = -1
 
 low = 0

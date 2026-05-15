@@ -1,7 +1,7 @@
 """
 Question: Count occurrences of a number in a sorted array with duplicates.
 """
-# Brute Force
+# Brute Force -->  formula used=>(last index - first index +1) 
 
 nums = [1, 2, 3, 3, 3, 3, 3, 5, 6, 8, 9, 9, 10]
 target = 3
@@ -16,7 +16,7 @@ for i in range(0, len(nums)):
 
 print("number of occurrance is:", last-first+1)
 
-# Optimal solution
+# Optimal solution -->   formula used => (upper_bound - lower_bound)
 
 nums = [1, 2, 3, 3, 3, 3, 3, 5, 8, 9, 9, 10, 10, 10]
 target = 10

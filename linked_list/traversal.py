@@ -1,4 +1,4 @@
-"""Traversal in Singly Linked List"""
+""" 2. Traversal in Singly Linked List """
 
 class Node:
     def __init__(self, val):

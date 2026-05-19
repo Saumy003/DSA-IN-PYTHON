@@ -1,47 +1,42 @@
-""" L -> 867"""
+""" Leetcode: 867 ->  Find the moddle of a Linked list """
 
+#brute Force
 class Node:
     def __init__(self, val):
         self.val = val
         self.next = None
-        
+
+
 class SinglyLinkedList:
     def __init__(self):
         self.head = None
 
+    """ Count total number of nodes present"""
 
-    def append(self, val):
-        new_node = Node(val)
-
-        if self.head is None:
-            self.head = new_node
-        
-        else:
-            curr = self.head
-
-            while curr.next is not None:
-                curr = curr.next
-
-            curr.next = new_node
-
-
-
-    def traversal(self):
-        if self.head is None:
-            print("Singly Linked List is Empty")
+    def middle(self):
+        n = 0
+        temp = self.head
+        while temp is not None:
+            n += 1
+            temp = temp.next
             
-        else:
-            curr = self.head
-            while curr is not None:
-                print(curr.val, end=" ")
-                curr = curr.next
+
+        """Apply loop in the half of total nodes"""
+
+        temp = self.head
+        for i in range(0, n // 2):
+            temp = temp.next
+        
+        return temp
 
 
+#Optimal Solution(Tortoise Hare Approach)
 
-l1 = SinglyLinkedList()
+        slow = self.head
+        fast = self.head
+        while fast is not None and fact.next is not None:
+            slow = slow.next
+            fast = fast.next.next
 
-l1.append(20)
-l1.append(30)
-l1.append(40)
-
-l1.traversal()
+        return slow
+        

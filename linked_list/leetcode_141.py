@@ -27,16 +27,16 @@ class SinglyLinkedList:
 #optimal solution(Tortoise Hare Approach)
 
 def cyclic_list(self):
-        
-        fast = self.head
-        slow = self.head
 
-        while fast is not None and fast.next is not None:
-            
-            slow = slow.next
-            fast = fast.next.next
+    slow = self.head
+    fast = self.head
 
-            if fast == slow:
-                return True
-        
-        return False
+    while fast is not None and fast.next is not None:
+
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow is fast:          #if fast == slow:
+            return True
+
+    return False

@@ -1,4 +1,4 @@
-""" Leetcode: 867 ->  Find the moddle of a Linked list """
+""" Leetcode: 867 ->  Find the middle of a Linked list """
 
 #brute Force
 class Node:

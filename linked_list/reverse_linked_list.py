@@ -26,7 +26,8 @@ class SinglyLinkedList:
         temp = self.head
         while temp is not None:
             e = stack.pop()
-            temp.val = temp = temp.next
+            temp.val = e
+            temp = temp.next
 
         return self.head
 
@@ -43,4 +44,3 @@ class SinglyLinkedList:
             temp = front
         
         return self.head
-

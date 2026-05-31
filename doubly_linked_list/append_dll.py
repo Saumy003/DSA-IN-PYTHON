@@ -10,7 +10,7 @@ class DoublyLinkedList:
     def __init__(self):
         self.head = None
 
-    # Insert at Head
+    # append a node in DLL
     def append(self, val):
         new_node = Node(val)
         if not self.head:

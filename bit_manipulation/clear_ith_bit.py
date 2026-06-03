@@ -7,6 +7,6 @@
 n = 13
 i = 2
 def clear_ith_bit():
-    return (n & ~(i << i))
+    return n & (~(1 << i))
 
 print(clear_ith_bit())

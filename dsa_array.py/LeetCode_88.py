@@ -1,4 +1,4 @@
-# Merge 2 sorted array without duplicates
+""" LeetCode: 88 -> Merge 2 sorted array without duplicates. """
 
 num1 = [1, 1, 1, 2, 4, 6, 7]
 num2 = [1, 2, 3, 4, 6, 7, 8, 9, 10]
@@ -30,4 +30,3 @@ while j < m:
     j += 1
 
 print(result)
-

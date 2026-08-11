@@ -51,3 +51,18 @@ def ratMaze(matrix: List[List[int]]) -> List[str]:
         findPathHelper(0, 0, matrix, n, ans, "", vis)
 
     return ans
+
+
+# Input
+matrix = [
+    [1, 0, 0, 0],
+    [1, 1, 0, 1],
+    [1, 1, 0, 0],
+    [0, 1, 1, 1]
+]
+
+# Get answer
+ans = ratMaze(matrix)
+
+# Print answer
+print(ans)
